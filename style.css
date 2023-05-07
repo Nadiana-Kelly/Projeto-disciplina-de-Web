@@ -1,6 +1,5 @@
 
-
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,300&display=swap');
 
 
 *{
@@ -20,7 +19,7 @@ nav{
     align-items: center;
     background: #000000;
     position: absolute;
-    width: 100vw;
+    width: 1519px;
     height: 85px;
     left: 0px;
     top: 0px;
@@ -93,7 +92,7 @@ img [src="cruz 1.png"]{
 img[src="image 3.png"]{
     position: relative;
     top: 85px;
-    left: 668px;
+    left: 650px;
  }
 
 .texto1 h3{
@@ -107,6 +106,22 @@ img[src="image 3.png"]{
     font-style: normal;
     font-weight: 800;
     font-size: 100px;
+    line-height: 117px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.texto1 h1{
+    position: relative;
+    width: 810px;
+    height: 250px;
+    left: 180px;
+    top: -350px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
     line-height: 117px;
     font-weight: bold;
     color: #000000;
