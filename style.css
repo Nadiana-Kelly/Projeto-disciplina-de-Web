@@ -144,10 +144,12 @@ img[src="image 3.png"]{
     position: absolute;
     width: 70%; 
     height: 250px; 
-    left: 250px;
+    left: 50%;
     top: 52em;;
     background: #FFFFFF; 
     box-shadow: 0px 4px 25px rgba(150, 150, 150, 0.70);
+    transform: translateX(-50%); /* centraliza a div */
+    margin: 0 auto; /* centraliza a div no meio horizontal */
 }
 
 
@@ -205,10 +207,12 @@ img[src="image 3.png"]{
     position: absolute;
     width: 70%; 
     height: 253px; 
-    left: 250px;
+    left: 50%;
     top: 72em;
     background: #FFFFFF; 
     box-shadow: 0px 4px 25px rgba(150, 150, 150, 0.70);
+    transform: translateX(-50%); /* centraliza a div */
+    margin: 0 auto; /* centraliza a div no meio horizontal */
 }
 
 
@@ -258,8 +262,7 @@ img[src="image 3.png"]{
 
 /*para mexer nos dois retangulos*/
 .todos-retangulos{
-    text-align: center;
-    margin-bottom:1.5em;
-    top: 25em;
+    display: flex;
+    justify-content: space-between;
     
 }
