@@ -1,14 +1,18 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway1:ital,wght@0,600;1,100;1,300&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-*{
-    margin:0;
-    padding:0;
+body{
+    background-color:   #FFFFFF;
 }
 
 a {
-    color: #fff;
+    color: #ffff;
     text-decoration: none;
 }
 
@@ -52,7 +56,6 @@ ul li:nth-child(5) a {
     border: 2px solid  #fff;
     top:38px;
     height: 21px;
-  
 }
 
 /* LINHA DO MENU */
@@ -60,7 +63,7 @@ ul li:nth-child(3) a {
     position: absolute;
     width: 42px;
     height: 0px;
-    left: 1130px;
+    left: 1120px;
     top: 40px;
     border: 1px solid #FFFFFF;
     transform: rotate(90deg); 
@@ -89,12 +92,14 @@ img [src="cruz 1.png"]{
     color: #FFFFFF;
 }
 
+/*imagem dos médicos */
 img[src="image 3.png"]{
     position: relative;
     top: 85px;
     left: 650px;
- }
+}
 
+/*título da parte principal*/
 .texto1 h3{
     position: relative;
     width: 810px;
@@ -103,26 +108,131 @@ img[src="image 3.png"]{
     top: -350px;
 
     font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
+    font-style: extrabold;
+    font-weight: 2000px;
     font-size: 100px;
     line-height: 117px;
-    font-weight: bold;
     color: #000000;
 }
 
+/*Subtítulo da parte principal*/
 .texto1 h1{
     position: relative;
-    width: 810px;
-    height: 250px;
+    width: 735px;
+    height:70px;
     left: 180px;
     top: -350px;
 
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 30px;
-    line-height: 117px;
-    font-weight: bold;
+    line-height: 35px;
     color: #000000;
+}
+
+/*//////////////////////////////////////////////////////////////*/
+
+/* retângulo dos médicos da página principal */
+#retangulo-medico1{
+    position: absolute;
+    width: 1240px; 
+    height: 253px; 
+    left: 180px;
+    top: 590px;
+    background: #FFFFFF; 
+    box-shadow: 0px 4px 25px rgba(150, 150, 150, 0.70);
+}
+
+
+/*imagem da dra juliana*/
+#retangulo-medico1 img[src="image 1.png"] {
+    border-radius: 50%;
+    width: 170px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+
+#informacoes-medico1 h1{
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+    left: 250px;
+    top: 75px;
+
+}
+
+#informacoes-medico1 p{
+    position: absolute;
+    font-family: 'Raleway1', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: #000000;
+    left: 250px;
+    top: 105px;
+
+}
+
+.botao1, .botao2{
+    border: none;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color:  #FFFFFF;
+    width: 276px;
+    height: 62px;
+    left: 910px;
+    top: 150px;
+    background: #0082E0;
+    border-radius: 30px;
+}
+
+
+/* retângulo dos médicos da página principal */
+#retangulo-medico2{
+    position: absolute;
+    width: 1240px; 
+    height: 253px; 
+    left: 180px;
+    top: 900px;
+    background: #FFFFFF; 
+    box-shadow: 0px 4px 25px rgba(150, 150, 150, 0.70);
+}
+
+
+/*imagem da dr flávio*/
+#retangulo-medico2 img[src="image 2.png"] {
+    border-radius: 50%;
+    width: 170px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+#informacoes-medico2 h1{
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+    left: 250px;
+    top: 75px;
+
+}
+
+#informacoes-medico2 p{
+    position: absolute;
+    font-family: 'Raleway1', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: #000000;
+    left: 250px;
+    top: 105px;
+
 }
