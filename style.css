@@ -145,7 +145,7 @@ img[src="image 3.png"]{
     width: 70%; 
     height: 250px; 
     left: 250px;
-    top: 5em;;
+    top: 52em;;
     background: #FFFFFF; 
     box-shadow: 0px 4px 25px rgba(150, 150, 150, 0.70);
 }
@@ -206,7 +206,7 @@ img[src="image 3.png"]{
     width: 70%; 
     height: 253px; 
     left: 250px;
-    top: 20em;
+    top: 72em;
     background: #FFFFFF; 
     box-shadow: 0px 4px 25px rgba(150, 150, 150, 0.70);
 }
@@ -258,7 +258,7 @@ img[src="image 3.png"]{
 
 /*para mexer nos dois retangulos*/
 .todos-retangulos{
-    align-items: center;
+    text-align: center;
     margin-bottom:1.5em;
     top: 25em;
     
