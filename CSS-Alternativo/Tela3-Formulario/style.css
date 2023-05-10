@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap');
+
+
+/*TELA 03*/
+/* amarelo pra letra grande: #B8860B*/
+/*amarelo pra letra pequena:  #FDD835*/
+/*preto pra fundo: #1C1C1C*/
+/*preto para inicio e footer: #000000 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: block;
+    background-color:  #1C1C1C;
+    width:100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #FDD835;
+    text-decoration: none;
+}
+
+/* NavBar */
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000000;
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+
+background: #000000;
+}
+
+.nav-list{
+    list-style: none;
+    display:flex;
+    font-family: 'Raleway', sans-serif;
+    left: 50%;
+    top:38px;
+    height: 21px;
+    font-style: SemiBold;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left:32px;
+}
+
+header ul li:nth-child(5) a {
+    padding: 9px;
+    background-color: none;
+    border-radius: 40px;
+    border: 2px solid  #FDD835;
+    top:38px;
+    height: 21px;
+}
+
+header ul li:nth-child(3) a {
+    position: relative;
+    width: 42px;
+    height: 0px;
+    right: 15%;
+    border: 1px solid #FDD835;
+    transform: rotate(90deg); 
+
+}
+
+img [src="cruz 1.png"]{
+    position: relative;
+    left: 20%;
+}
+
+.logo{
+    position: relative;
+    width: 254px;
+    height: 54px;
+    left: 10px;
+}
+
+/* Formulário */
+.formulario {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.campos h3{
+    padding-top: 2%;
+    color: #FDD835;
+}
+
+.campos h1{
+    color:#FDD835;
+}
+
+.campos input{
+    height: 50px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 1%;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    color:#000000;
+}
+
+.campos textarea{
+    height: 100px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 1%;
+    padding-top: 1%;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    color:#000000;
+    
+}
+
+.campos button {
+    border: none;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 00;
+    color:  #FDD835;
+    width: 25%;
+    height: 50px;
+    float:right; 
+    background: #000000;
+    border-radius: 30px;
+    border: 2px solid #FFFFFF;
+}
+
+.botao {
+    margin-top: 2%;
+}
+
+/* Footer */
+
+footer {
+    padding: 3% 0 3% 0;
+    margin-top: 5%;
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+}
+
+.conteudo-footer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FDD835;
+}
+
+.links-footer {
+    list-style: none;
+    align-items: center;
+    color: #FDD835;
+}
+
+.links-footer a {
+    padding-top: 10px;
+}
+
+.facebook {
+    padding: 5px 5px 5px 0;
+}
+
+
+
