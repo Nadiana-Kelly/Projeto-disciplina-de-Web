@@ -47,7 +47,6 @@ background: #000000;
     left: 50%;
     top:38px;
     height: 21px;
-    font-style: SemiBold;
 }
 
 .nav-list li{
@@ -57,7 +56,6 @@ background: #000000;
 
 header ul li:nth-child(5) a {
     padding: 9px;
-    background-color: none;
     border-radius: 40px;
     border: 2px solid  #FDD835;
     top:38px;
@@ -122,7 +120,7 @@ img [src="cruz 1.png"]{
     padding-left: 1%;
     padding-top: 1%;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 500    ;
     background-color: #FFFFFF;
     border: none;
     border-radius: 10px;
@@ -134,7 +132,6 @@ img [src="cruz 1.png"]{
     border: none;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 00;
     color:  #FDD835;
     width: 25%;
     height: 50px;
