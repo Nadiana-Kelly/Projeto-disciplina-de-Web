@@ -44,7 +44,6 @@ nav{
     left: 50%;
     top:38px;
     height: 21px;
-    font-style: SemiBold;
 }
 
 .nav-list li{
@@ -54,7 +53,6 @@ nav{
 
 header ul li:nth-child(5) a {
     padding: 9px;
-    background-color: none;
     border-radius: 40px;
     border: 2px solid  #FDD835;
     top:38px;
