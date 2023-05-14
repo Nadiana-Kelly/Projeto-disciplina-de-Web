@@ -65,7 +65,7 @@ header ul li:nth-child(3) a {
     width: 42px;
     height: 0px;
     right: 15%;
-    border: 1px solid #FDD835;
+    border: 1px solid #FFFFFF;
     transform: rotate(90deg); 
 }
 
@@ -145,11 +145,11 @@ header ul li:nth-child(3) a {
     background-color: #1C1C1C;
 }
 
-#informacoes-medico {
+.informacoes-medico {
     display: flex;
 }
 
-#informacoes-medico div{
+.informacoes-medico div{
     padding-left: 20px;
     align-self: center;
 }
