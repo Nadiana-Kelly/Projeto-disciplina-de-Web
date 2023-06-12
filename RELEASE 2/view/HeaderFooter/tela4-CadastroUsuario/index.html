@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../HeaderFooter/style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário do Paciente</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="../HeaderFooter/logo.png" alt="logo">
+            <ul class="nav-list">
+                <button id='btnColor' class="botaocss">Alternar cores</button>
+                <li><a href="../tela1-profissionais/index.html">INÍCIO</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="../tela0-login/index.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="formulario">
+        <div>
+            <h1>Formulário do Paciente</h1> <br><br>
+            <form id="myForm" action="http://localhost:3000/usuarios/criar-conta">
+                <label for="nome">Nome completo do paciente</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="dataNascimento"> Data de nascimento</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required>
+                
+                <label for="idade">Idade do paciente</label>
+                <input type="number" id="idade" name="idade" readonly>
+                
+                <label for="endereco">Endereço completo</label>
+                <input type="text" id="endereco" name="endereco" required>
+                
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+                
+                <input id='btn1' type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="conteudo-footer">
+            <div>
+                <img class="logo" src="../HeaderFooter/logo.png" alt="logo">
+            </div>
+            <div>
+                <ul class = "links-footer">
+                    <li><h2>Insitucional</h2></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Profissionais</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Redes Sociais</h2>
+                <div class = "icones">
+                    <img class = "facebook" src="../HeaderFooter/face.svg" alt="facebook">
+                    <img  src="../HeaderFooter/insta.svg" alt="instagram">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Cálculo da idade do paciente
+        document.getElementById("dataNascimento").addEventListener("change", function() {
+            var dataNascimento = new Date(this.value);
+            var dataAtual = new Date();
+            var idade = dataAtual.getFullYear() - dataNascimento.getFullYear();
+            document.getElementById("idade").value = idade;
+        });
+
+        document.getElementById("btn1").addEventListener("click", function() {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            var nome     = document.getElementById("nome").value;
+            var idade    = document.getElementById("idade").value;
+            var endereco = document.getElementById("endereco").value;
+            var email    = document.getElementById("email").value;
+            var telefone = document.getElementById("telefone").value;
+            var username = document.getElementById("username").value;
+            var senha    = document.getElementById("senha").value;
+
+            const url = 'http://localhost:3000/usuarios/criar-conta'; // Substitua pelo URL do seu endpoint de destino
+
+            data = { nome, idade, endereco, email, telefone, username, senha };
+
+            fetch(url, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message)
+            })
+        });
+    </script>
+</body>
+
+</html>
