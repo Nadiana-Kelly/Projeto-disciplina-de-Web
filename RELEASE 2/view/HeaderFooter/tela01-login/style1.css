@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap');
+
+body {
+    background-color: #1C1C1C;
+}
+
+.formulario {
+    background-color: #1C1C1C;
+    color: #1C1C1C;
+    width: 400px;
+    border-radius: 5px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 2px 10px rgba(150, 150, 150, 0.70);
+}
+
+.formulario h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.formulario input[type="submit"] {
+    background-color: #FDD835;
+    color: #B8860B;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #1C1C1C;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 700px;
+}
