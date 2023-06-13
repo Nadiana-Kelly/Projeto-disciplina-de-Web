@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+body {
+    width:100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000000;
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+}
+
+.botaocss{
+    background-color:darkblue;
+    border-radius: 30px;
+    color: white;
+    padding: 0 10px 0 10px;
+}
+
+.nav-list{
+    list-style: none;
+    display:flex;
+    font-family: 'Raleway', sans-serif;
+    left: 50%;
+    top:38px;
+    height: 21px;
+    font-style: SemiBold;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left:32px;
+}
+
+header ul li:nth-child(5) a {
+    padding: 9px;
+    background-color: none;
+    border-radius: 40px;
+    border: 2px solid  #fff;
+    top:38px;
+    height: 21px;
+}
+
+header ul li:nth-child(3) a {
+    position: relative;
+    width: 42px;
+    height: 0px;
+    right: 15%;
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg); 
+
+}
+
+img [src="cruz 1.png"]{
+    position: relative;
+    left: 20%;
+}
+
+.logo{
+    position: relative;
+    width: 254px;
+    height: 54px;
+    left: 10px;
+}
+
+footer {
+    padding: 3% 0 3% 0;
+    margin-top: 2%;
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+}
+
+.conteudo-footer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.links-footer {
+    list-style: none;
+    align-items: center;
+}
+
+.facebook {
+    padding: 5px 5px 5px 0;
+}
